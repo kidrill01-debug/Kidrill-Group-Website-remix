@@ -53,8 +53,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
             <div className="lg:col-span-7 space-y-6">
 
               {/* Main Headline */}
-              <h1 className="text-3xl sm:text-5xl lg:text-5xl xl:text-6xl font-serif-corp font-normal [word-spacing:0.35em] tracking-normal text-slate-950 leading-[1.08]">
-                KIDRILL TEST
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif-corp font-normal tracking-tight text-slate-950 leading-[1.08]">
+                <span className="block">Global Resources</span>
+                <span className="block text-slate-900 mt-1 sm:mt-2">Trusted Trade</span>
               </h1>
 
               {/* Supporting Editorial Prose */}
