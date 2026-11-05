@@ -1,0 +1,8 @@
+{
+  "name": "Remix Kidrill Group - Global Resources \u0026 Trusted Trade",
+  "description": "Kidrill Group is an international trading and resources corporation operating across Southeast Asia and global markets in minerals, metals, agricultural commodities, and seafood.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
