@@ -544,7 +544,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
         {/* Subtle grid pattern for corporate texture */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#c8102e_1px,transparent_1px)] [background-size:24px_24px]" />
         
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 text-xs font-mono-num uppercase tracking-[0.25em] text-[#C8102E] bg-[#C8102E]/5 border border-[#C8102E]/20 px-3.5 py-1.5 rounded-full mb-6 font-semibold">
             <span className="w-1.5 h-1.5 rounded-full bg-[#C8102E]" />
             <span>{t.sustainability.tag}</span>
@@ -596,7 +596,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
             {newsArticles.slice(0, 2).map((article) => {
               const title = article.titleEn;
               const excerpt = article.excerptEn;
@@ -604,29 +604,29 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <div
                   key={article.id}
                   onClick={() => onReadArticle(article.id)}
-                  className="group bg-[#F8FAFC] border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all cursor-pointer flex flex-col justify-between hover:border-[#C8102E]/40"
+                  className="group bg-[#F8FAFC] border border-slate-200 rounded-2xl p-8 sm:p-10 lg:p-11 hover:shadow-xl transition-all cursor-pointer flex flex-col justify-between hover:border-[#C8102E]/40"
                 >
                   <div>
-                    <div className="flex items-center justify-between text-xs font-mono-num text-slate-500 mb-4 pb-3 border-b border-slate-200">
-                      <span className="text-[#C8102E] font-semibold">{article.category}</span>
-                      <span className="bg-amber-100 text-amber-800 px-2 py-0.5 rounded text-[10px]">
+                    <div className="flex items-center justify-between text-xs font-mono-num text-slate-500 mb-5 pb-3.5 border-b border-slate-200">
+                      <span className="text-[#C8102E] font-semibold tracking-wide">{article.category}</span>
+                      <span className="bg-amber-100 text-amber-800 px-2.5 py-1 rounded text-[11px] font-medium">
                         {t.news.sampleBadge}
                       </span>
                     </div>
 
-                    <h3 className="text-xl sm:text-2xl font-serif-corp font-medium text-slate-950 group-hover:text-[#C8102E] transition-colors leading-snug">
+                    <h3 className="text-2xl sm:text-[26px] lg:text-[28px] font-serif-corp font-medium text-slate-950 group-hover:text-[#C8102E] transition-colors leading-snug">
                       {title}
                     </h3>
-                    <p className="mt-3 text-xs sm:text-sm text-slate-600 font-light leading-relaxed line-clamp-3">
+                    <p className="mt-4 text-sm sm:text-base text-slate-600 font-light leading-relaxed line-clamp-3 sm:line-clamp-4">
                       {excerpt}
                     </p>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between text-xs font-mono-num text-slate-500">
+                  <div className="mt-8 pt-5 border-t border-slate-200 flex items-center justify-between text-xs sm:text-sm font-mono-num text-slate-500">
                     <span>{article.date} · {article.readTime}</span>
-                    <span className="text-slate-900 font-semibold group-hover:translate-x-1 group-hover:text-[#C8102E] transition-all inline-flex items-center gap-1">
+                    <span className="text-slate-900 font-semibold group-hover:translate-x-1 group-hover:text-[#C8102E] transition-all inline-flex items-center gap-1.5">
                       {t.news.readArticle}
-                      <ArrowRight className="w-3.5 h-3.5 text-[#C8102E]" />
+                      <ArrowRight className="w-4 h-4 text-[#C8102E]" />
                     </span>
                   </div>
                 </div>
@@ -641,7 +641,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
         {/* Subtle decorative glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-[#C8102E]/5 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 text-xs font-mono-num uppercase tracking-[0.25em] text-[#C8102E] bg-[#C8102E]/5 border border-[#C8102E]/20 px-3.5 py-1.5 rounded font-semibold mb-4">
             <span className="w-1.5 h-1.5 rounded-full bg-[#C8102E]" />
             <span>B2B COMMODITY PARTNERSHIP · DIRECT TRADE DESK</span>
