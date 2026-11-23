@@ -50,53 +50,54 @@ export const RealImage: React.FC<RealImageProps> = ({
   };
 
   return (
-    <div
-      style={style}
-      className={`relative w-full overflow-hidden rounded-xl bg-slate-100 ${aspectClasses[aspectRatio]} ${className}`}
-    >
-      {/* Loading Shimmer */}
-      {isLoading && !hasError && (
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100 animate-pulse" />
-      )}
+    <div className={`w-full ${className}`} style={style}>
+      <div
+        className={`relative w-full overflow-hidden rounded-xl bg-slate-100 ${aspectClasses[aspectRatio]}`}
+      >
+        {/* Loading Shimmer */}
+        {isLoading && !hasError && (
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-100 via-slate-200 to-slate-100 animate-pulse" />
+        )}
 
-      {/* Real High-Resolution Photograph */}
-      {!hasError ? (
-        <img
-          src={currentSrc}
-          alt={alt}
-          referrerPolicy="no-referrer"
-          loading="lazy"
-          onLoad={() => setIsLoading(false)}
-          onError={handleError}
-          style={imgStyle}
-          className={`w-full h-full object-cover transition-all duration-700 ${
-            isLoading ? 'opacity-0 scale-102' : 'opacity-100 scale-100'
-          }`}
-        />
-      ) : (
-        /* Styled Fallback Container if network blocks external images */
-        <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-tr from-slate-100 via-slate-50 to-slate-200">
-          <div className="text-xs font-mono-num font-semibold uppercase tracking-wider text-[#C8102E] bg-[#C8102E]/5 border border-[#C8102E]/20 px-3 py-1 rounded">
-            {badge || 'KIDRILL GROUP'}
+        {/* Real High-Resolution Photograph */}
+        {!hasError ? (
+          <img
+            src={currentSrc}
+            alt={alt}
+            referrerPolicy="no-referrer"
+            loading="lazy"
+            onLoad={() => setIsLoading(false)}
+            onError={handleError}
+            style={imgStyle}
+            className={`w-full h-full object-cover transition-all duration-700 ${
+              isLoading ? 'opacity-0 scale-102' : 'opacity-100 scale-100'
+            }`}
+          />
+        ) : (
+          /* Styled Fallback Container if network blocks external images */
+          <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-gradient-to-tr from-slate-100 via-slate-50 to-slate-200">
+            <div className="text-xs font-mono-num font-semibold uppercase tracking-wider text-[#C8102E] bg-[#C8102E]/5 border border-[#C8102E]/20 px-3 py-1 rounded">
+              {badge || 'KIDRILL GROUP'}
+            </div>
+            <p className="mt-2 text-sm font-medium text-slate-800 max-w-xs">{alt}</p>
           </div>
-          <p className="mt-2 text-sm font-medium text-slate-800 max-w-xs">{alt}</p>
-        </div>
-      )}
+        )}
 
-      {/* Optional Badge Overlay */}
-      {badge && (
-        <div className="absolute top-3 left-3 z-10">
-          <span className="px-2.5 py-1 text-[10px] font-mono-num uppercase tracking-wider font-semibold bg-white/95 text-slate-900 backdrop-blur-md rounded shadow-xs border border-white/40">
-            {badge}
-          </span>
-        </div>
-      )}
+        {/* Optional Badge Overlay */}
+        {badge && (
+          <div className="absolute top-3 left-3 z-10">
+            <span className="px-2.5 py-1 text-[10px] font-mono-num uppercase tracking-wider font-semibold bg-white/95 text-slate-900 backdrop-blur-md rounded shadow-xs border border-white/40">
+              {badge}
+            </span>
+          </div>
+        )}
+      </div>
 
-      {/* Optional Bottom Caption Scrim */}
+      {/* Clean External Caption Below Image (Never obscuring the photograph) */}
       {caption && (
-        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent p-3 pt-6 z-10 text-left">
-          <p className="text-xs text-white font-medium drop-shadow-sm">{caption}</p>
-        </div>
+        <p className="mt-2 text-xs text-slate-500 font-light leading-relaxed text-left">
+          {caption}
+        </p>
       )}
     </div>
   );

@@ -45,34 +45,50 @@ export const translations = {
       selectRegion: "Select a market to review corridor flows:"
     },
     businessOverview: {
-      tag: "CORE SECTORS",
-      title: "Pillars of International Commerce & Industry",
-      subtitle: "We orchestrate end-to-end commodity trade, industrial mineral processing, and smelting with rigorous compliance, inspection protocols, and logistical reliability.",
+      tag: "COMMERCIAL ACTIVITIES & OPERATIONS",
+      title: "Trading, Sourcing, Processing & Logistics",
+      subtitle: "Kidrill Group manages integrated commodity trade, industrial mineral processing, specialized smelting and cross-border maritime logistics backed by rigorous quality inspection protocols.",
       sector1: {
-        title: "Mineral Commodities & Mining Resources",
-        desc: "International sourcing and trading of mineral commodities, mined resources, and raw mineral materials connecting Indonesian concessions with global processing facilities.",
-        items: ["Mineral Commodities & Mining Resources", "Mining Resources & Raw Mineral Materials", "Concession Sourcing & Concession Trade"]
+        title: "Mineral Commodities & Energy Resources",
+        desc: "Physical trading and commercial origination of mineral commodities, energy resources and raw mineral materials, building strategic relationships with verified regional producers across Indonesia for international industrial consumers.",
+        items: ["Mineral Commodities & Energy Resources", "Raw Mineral Materials & Ores", "Regional Producer Trade & Offtake"]
       },
       sector2: {
-        title: "Food & Agriculture",
-        desc: "Connecting quality agricultural and food products from Vietnam with international buyers.",
-        items: ["Vietnamese Export Rice", "Agricultural Products & Origin Commodities", "Processed Food Products & Specialties"]
+        title: "Food & Agricultural Sourcing",
+        desc: "Origin sourcing, packaging oversight and export trade of high-grade Vietnamese agricultural commodities and processed food products directly to international wholesalers and food manufacturers.",
+        items: ["Vietnamese Export Rice", "Origin Agricultural Commodities", "Processed Food Products & Specialties"]
       },
       sector3: {
         title: "Mineral Processing & Smelter",
-        desc: "KIDRILL is our mineral processing and smelting facility located in Penang, Malaysia, dedicated to producing copper cathodes, copper concentrates, industrial metals, and non-ferrous alloys.",
+        desc: "KIDRILL operates our specialized mineral processing and smelting facility in Penang, Malaysia, dedicated to metallurgical conversion, copper cathode production, copper concentrates, industrial metals and non-ferrous alloys.",
         items: ["Copper (Cathode & Concentrates)", "Industrial Metals & Non-Ferrous Alloys", "Mineral Processing & Smelting", "Metallurgical Offtake Streams"]
       },
       sector4: {
-        title: "International Trading",
-        desc: "Cross-border B2B sourcing, trading and supply solutions across Asia and global markets.",
+        title: "Maritime Logistics & Trade Services",
+        desc: "Cross-border charter coordination, bulk ocean carriage, independent laboratory assay surveillance and structured trade finance solutions for international counterparty transactions.",
         items: ["Cross-Border Contract Execution", "Bulk Logistics & Charter Coordination", "Third-Party Quality Verification", "Structured B2B Supply Contracts"]
       }
+    },
+    sourcingRequirements: {
+      tag: "STRATEGIC SOURCING",
+      title: "Our Sourcing Requirements",
+      subtitle: "KIDRILL Group is seeking reliable suppliers and strategic sourcing partners for copper ore to support its mineral processing and trading activities.",
+      notice: "Formal product specifications, lot delivery quantities and commercial supply terms are finalized directly under bilateral non-disclosure and commercial agreements with qualified suppliers.",
+      cta: "Submit Copper Ore Supply Proposal",
+      categories: [
+        {
+          id: "copper_ore",
+          name: "Copper Ore",
+          focus: "Copper ore to support KIDRILL Group's mineral processing, smelting operations and international trading activities.",
+          criteria: "Valid mining and export permits where applicable, independent assay reports, verifiable product specifications and reliable export logistics.",
+          channel: "Feedstock integration with KIDRILL mineral processing and smelting operations in Penang, Malaysia and international trade coordination."
+        }
+      ]
     },
     twoCompanies: {
       tag: "CORPORATE STRUCTURE",
       title: "Three Companies. Three Countries. One Corporate Group.",
-      subtitle: "Kidrill Group operates through three strategically anchored corporate entities across Indonesia, Malaysia, and Vietnam, uniting mineral resource trading, mineral processing and smelting, and food export under an integrated international governance model.",
+      subtitle: "Kidrill Group operates through three strategically anchored corporate entities across Indonesia, Malaysia and Vietnam, uniting mineral resource trading, mineral processing and smelting, and food export under an integrated international governance model.",
       company1: {
         name: "KIDRILL METAL MINING",
         legalName: "PT PMA Kidrill Metal Mining",
@@ -80,8 +96,8 @@ export const translations = {
         addressLine1: "23rd Floor, Pakuwon Centre",
         addressLine2: "Jl Embong Malang Kedungdoro, Tegalsari",
         addressLine3: "Kota Surabaya, Jawa Timur, Indonesia",
-        business: "Mineral Commodities & Mining Resources — Mineral commodities, raw mineral materials, and mining resources.",
-        role: "Strategic Indonesian mineral sourcing engine connecting concession operators with international processing and smelting facilities.",
+        business: "Mineral Commodities & Energy Resources — Mineral commodities, raw mineral materials and energy resources.",
+        role: "Indonesian commercial and sourcing base cultivating supplier relationships with authorized local producers and mineral resource holders to coordinate international trade flows.",
         markets: ["Southeast Asia", "China", "South Korea", "Europe", "United States"]
       },
       company2: {
@@ -90,8 +106,8 @@ export const translations = {
         addressLine1: "Golding King Tower, Nguyen Luong Bang St.",
         addressLine2: "Tan Hung Ward",
         addressLine3: "Ho Chi Minh City, Vietnam",
-        business: "International commodity trading, Mineral exports, Agricultural products, Food products, Seafood, Vietnamese-origin products, International sourcing, and Export to global markets.",
-        role: "Vietnamese agricultural, seafood, and mineral export bridge connecting origin producers directly with international wholesalers and food manufacturers.",
+        business: "International commodity trading, Mineral exports, Agricultural products, Food products, Seafood, Vietnamese-origin products, International sourcing and Export to global markets.",
+        role: "Vietnamese agricultural, seafood and mineral export bridge connecting origin producers directly with international wholesalers and food manufacturers.",
         markets: ["Southeast Asia", "South Korea", "China", "Europe", "United States"]
       },
       company3: {
@@ -101,30 +117,30 @@ export const translations = {
         addressLine2: "Penang",
         addressLine3: "Penang, Malaysia",
         business: "Mineral Processing & Smelter — Copper (Cathode & Concentrates), Industrial Metals & Non-Ferrous Alloys.",
-        summary: "KIDRILL is our mineral processing and smelting facility located in Penang, Malaysia, dedicated to producing copper cathodes, copper concentrates, industrial metals, and non-ferrous alloys.",
-        role: "Mineral Processing & Smelter facility in Penang, Malaysia, producing copper cathodes, copper concentrates, industrial metals, and non-ferrous alloys for global industrial offtakers.",
+        summary: "KIDRILL is our mineral processing and smelting facility located in Penang, Malaysia, dedicated to producing copper cathodes, copper concentrates, industrial metals and non-ferrous alloys.",
+        role: "Mineral Processing & Smelter facility in Penang, Malaysia, producing copper cathodes, copper concentrates, industrial metals and non-ferrous alloys for global industrial offtakers.",
         markets: ["Regional Smelters", "Industrial Refining Hubs", "International Metal Consumers"]
       }
     },
     about: {
-      tag: "ABOUT KIDRILL GROUP",
-      headline: "Building Long-Term Value Through International Trade & Industry",
-      storyTitle: "Our Institutional Purpose",
-      storyP1: "Kidrill Group is an independent international trading, resources, and industrial corporation. Operating at the commercial intersection of Southeast Asia's natural abundance and the world's industrial manufacturing hubs, we connect reliable mineral, metal, and agricultural supply with established international buyers.",
-      storyP2: "Rather than functioning as a transactional broker or localized operator, Kidrill Group operates on an institutional model modeled after the world's most disciplined general trading companies. We cultivate direct access to origin suppliers in Indonesia and Vietnam, develop mineral processing and smelting via KIDRILL in Penang, Malaysia, enforce uncompromising quality verification, and structure long-term supply agreements.",
-      storyP3: "Our corporate structure—anchored by PT PMA Kidrill Metal Mining in Surabaya, KIDRILL in Penang, and Thunder Mark Vietnam Co., Ltd. in Ho Chi Minh City—provides deep on-the-ground operational capability, industrial mineral processing and smelting strength, cross-border compliance fluency, and direct trade channel management.",
+      tag: "COMPANY INTRODUCTION",
+      headline: "Corporate Governance, Institutional Discipline & Global Vision",
+      storyTitle: "Group Identity & Strategic Positioning",
+      storyP1: "Kidrill Group is an independent international commercial group operating at the nexus of Southeast Asian resource corridors and global industrial centers. Built on disciplined corporate governance, structured risk management and multilateral commercial capabilities, the Group unites regional origination with institutional international markets under a cohesive executive leadership.",
+      storyP2: "Operating with the compliance rigor, financial discipline and counterparty diligence characteristic of international trading institutions, Kidrill Group prioritizes long-term bilateral partnerships over speculative spot transactions. Our core organizational capabilities encompass trade finance structuring, cross-border regulatory compliance, independent laboratory quality verification and end-to-end supply chain orchestration.",
+      storyP3: "With dedicated corporate operating bases in Surabaya (Indonesia), Penang (Malaysia) and Ho Chi Minh City (Vietnam), Kidrill Group provides a resilient, multi-jurisdictional platform engineered for sound commercial stewardship, operational transparency and enduring stakeholder value.",
       visionTitle: "Our Vision",
       visionText: "To build a trusted international trading group connecting Southeast Asian resources and products with global markets.",
       missionTitle: "Our Mission",
       missionText: "To create reliable, transparent and long-term partnerships between suppliers and buyers through professional international trade.",
       valuesTitle: "Core Corporate Values",
       values: [
-        { name: "Integrity", desc: "Absolute adherence to contractual precision, ethical governance, and transparent trade documentation." },
-        { name: "Reliability", desc: "Consistent supply execution, stringent specification control, and steadfast counterparty performance." },
+        { name: "Integrity", desc: "Absolute adherence to contractual precision, ethical governance and transparent trade documentation." },
+        { name: "Reliability", desc: "Consistent supply execution, stringent specification control and steadfast counterparty performance." },
         { name: "Partnership", desc: "Prioritizing multi-year bilateral relationships over opportunistic spot-market speculation." },
-        { name: "Professionalism", desc: "Institutional trade execution, comprehensive risk management, and international standard logistics." },
+        { name: "Professionalism", desc: "Institutional trade execution, comprehensive risk management and international standard logistics." },
         { name: "Global Perspective", desc: "Bridging cultural and regulatory nuances between Asian resource origins and international buyer destinations." },
-        { name: "Long-Term Value", desc: "Creating sustainable mutual economic value for producers, industrial consumers, and regional communities." }
+        { name: "Long-Term Value", desc: "Creating sustainable mutual economic value for producers, industrial consumers and regional communities." }
       ]
     },
     products: {
@@ -304,29 +320,45 @@ export const translations = {
       selectRegion: "무역 회랑 정보를 확인하려면 시장을 선택하세요:"
     },
     businessOverview: {
-      tag: "핵심 사업 분야",
-      title: "국제 무역 및 산업의 핵심 축",
-      subtitle: "철저한 규정 준수, 품질 검수 절차, 광물 가공 및 제련 역량을 바탕으로 엔드투엔드 원자재 무역을 조율합니다.",
+      tag: "실제 사업 활동 및 운영",
+      title: "무역, 소싱, 광물 가공 및 물류 솔루션",
+      subtitle: "키드릴 그룹은 철저한 공인 품질 검수 체계와 리스크 관리 역량을 바탕으로 원자재 무역, 페낭 제련소 광물 가공, 국경 간 해상 물류를 통합 운영합니다.",
       sector1: {
-        title: "광물 원자재 및 광산 자원 (Mineral Commodities & Mining Resources)",
-        desc: "인도네시아의 풍부한 광산 자원, 원광석 및 원자재를 발굴하여 해외 정련 및 가공 시설과 연결하는 광물 원자재 무역 서비스.",
-        items: ["광물 원자재 및 광산 자원", "채굴 광석 및 천연 원료", "광산 직거래 무역 기회"]
+        title: "광물 원자재 및 에너지 자원 (Mineral Commodities & Energy Resources)",
+        desc: "인도네시아 공인 생산업체 및 자원 보유사와의 전략적 네트워크를 바탕으로 광물 원자재, 에너지 자원 및 천연 원광석의 무역과 국제 출하를 조율합니다.",
+        items: ["광물 원자재 및 에너지 자원", "천연 원광석 및 기초 금속 원료", "현지 공인 공급선 무역 조율"]
       },
       sector2: {
-        title: "농산물 및 식품 (Food & Agriculture)",
-        desc: "베트남산 고품질 농산물 및 식품을 글로벌 바이어와 연결.",
+        title: "농산물 및 식품 소싱 (Food & Agriculture)",
+        desc: "베트남 현지 우수 협동조합 및 정미 공장으로부터 직접 소싱하여 국제 도매상 및 식품 제조사에 안정적으로 공급합니다.",
         items: ["베트남 수출용 쌀 (Vietnamese Export Rice)", "특산 농산물 및 원자재 (Agricultural Products)", "수출용 가공식품 (Processed Food Products)"]
       },
       sector3: {
         title: "광물 가공 및 제련 (Mineral Processing & Smelter)",
-        desc: "말레이시아 페낭에 위치한 키드릴(KIDRILL)은 전기동(음극재 및 동정광), 산업용 금속 및 비철합금의 생산과 회수를 전담하는 그룹의 핵심 산업 시설입니다.",
+        desc: "말레이시아 페낭에 위치한 키드릴(KIDRILL)은 야금학적 정련 가공을 통해 전기동 음극재, 동정광, 산업용 금속 및 비철합금을 생산하는 그룹의 핵심 산업 시설입니다.",
         items: ["전기동 (음극재 및 동정광)", "산업용 금속 및 비철합금", "광물 가공 및 제련", "고부가가치 제련 출하"]
       },
       sector4: {
-        title: "국제 무역 종합 솔루션 (International Trading)",
-        desc: "아시아 및 글로벌 시장을 아우르는 B2B 소싱, 무역 및 공급망 솔루션.",
+        title: "해상 물류 및 무역 서비스 (Logistics & Trade Services)",
+        desc: "벌크선 용선 조율, 국경 간 복합 물류, 공인 시험 기관(SGS, AHK) 정밀 검정 및 국제 무역 금융 솔루션을 일괄 제공합니다.",
         items: ["국경 간 무역 계약 체결 및 이행", "벌크선 및 컨테이너 해상 물류 조율", "공인 3자 품질 검수 및 검정", "중장기 안정적 공급 계약 구조화"]
       }
+    },
+    sourcingRequirements: {
+      tag: "전략적 원자재 소싱",
+      title: "우리의 소싱 요구조건 (Our Sourcing Requirements)",
+      subtitle: "KIDRILL Group is seeking reliable suppliers and strategic sourcing partners for copper ore to support its mineral processing and trading activities. (키드릴 그룹은 광물 가공·제련 및 무역 사업을 뒷받침하기 위해 구리 원광의 신뢰할 수 있는 공급업체 및 전략적 소싱 파트너를 찾고 있습니다.)",
+      notice: "공식 제품 사양, 선적 물량 및 상업적 인도 조건은 적격 공급사와의 상호 비밀유지협약(NDA) 및 공급 계약을 통해 최종 확정됩니다.",
+      cta: "구리 원광 공급 제안서 제출 (Submit Supply Proposal)",
+      categories: [
+        {
+          id: "copper_ore",
+          name: "구리 원광 (Copper Ore)",
+          focus: "키드릴 그룹의 광물 가공·제련 공정 및 무역 사업을 지원하기 위한 구리 원광 공급.",
+          criteria: "해당되는 경우 유효한 광업권 및 수출 허가증, 공인 시험기관의 독립 분석 성적서, 검증 가능한 제품 사양 및 안정적인 수출 물류 체계.",
+          channel: "말레이시아 페낭 KIDRILL 광물 가공·제련 시설 원료 투입 및 국제 무역 연계."
+        }
+      ]
     },
     twoCompanies: {
       tag: "기업 지배구조",
@@ -339,8 +371,8 @@ export const translations = {
         addressLine1: "23rd Floor, Pakuwon Centre",
         addressLine2: "Jl Embong Malang Kedungdoro, Tegalsari",
         addressLine3: "Kota Surabaya, Jawa Timur, Indonesia",
-        business: "광물 원자재 및 광산 자원 (Mineral Commodities & Mining Resources) — 광물 원자재, 천연 원광석 및 광산 자원 무역.",
-        role: "인도네시아의 풍부한 광물 자원 채굴권을 글로벌 정련 및 제련 시설과 연결하는 핵심 자원 소싱 거점.",
+        business: "광물 원자재 및 에너지 자원 (Mineral Commodities & Energy Resources) — 광물 원자재, 천연 원광석 및 에너지 자원 무역.",
+        role: "인도네시아 현지 인허가 보유사 및 공인 생산자와의 협력을 통해 국제 무역 흐름을 조율하는 소싱·상무 거점.",
         markets: ["동남아시아", "중국", "대한민국", "유럽", "미국"]
       },
       company2: {
@@ -365,12 +397,12 @@ export const translations = {
       }
     },
     about: {
-      tag: "키드릴 그룹 소개",
-      headline: "국제 무역 및 산업을 통한 장기적 가치 창출",
-      storyTitle: "기업의 목적과 지향점",
-      storyP1: "키드릴 그룹은 자원 및 원자재 무역, 산업 가공을 전문으로 하는 독립 국제 기업입니다. 동남아시아의 풍부한 천연자원과 전 세계의 제조 및 산업 단지를 잇는 무역의 교차점에서, 신뢰할 수 있는 광물, 금속, 농산물 공급망을 글로벌 구매자들과 연결합니다.",
-      storyP2: "단순한 중개인이 아닌, 세계 유수의 종합상사 수준의 엄격한 상무 절차와 위험 관리 원칙을 따릅니다. 인도네시아와 베트남 현지 생산지와의 직접적인 협력 관계를 구축하고, 말레이시아 페낭의 KIDRILL을 통한 광물 가공 및 제련(Mineral Processing & Smelter)을 추진하며, 철저한 검수와 체계적인 장기 공급 계약을 실행합니다.",
-      storyP3: "인도네시아 수라바야의 PT PMA Kidrill Metal Mining, 말레이시아 페낭의 KIDRILL, 베트남 호치민의 Thunder Mark Vietnam Co., Ltd.를 3대 축으로 하여, 현지 실사 능력, 산업 가공 및 제련 역량, 규제 준수 체계를 확립하였습니다.",
+      tag: "그룹 정체성 및 비전",
+      headline: "글로벌 거버넌스와 제도적 신뢰를 바탕으로 한 지속 가능한 가치",
+      storyTitle: "기업의 정체성과 전략적 포지셔닝",
+      storyP1: "키드릴 그룹은 동남아시아의 풍부한 자원 회랑과 글로벌 제조 산업 중심지를 잇는 독립 국제 상무 기업입니다. 엄격한 지배구조와 정교한 리스크 관리, 국경 간 상무 역량을 기반으로 지역 내 우수한 원자재와 글로벌 산업 수요를 단일 리더십 아래 연결합니다.",
+      storyP2: "글로벌 종합상사 수준의 상무 준법성(Compliance)과 엄격한 거래처 실사를 고수하며, 단기적 투기 거래를 지양하고 지속 가능한 양자간 장기 협력에 집중합니다. 무역 금융 구조화, 복합 법규 준수, 공인 시험 기관 품질 검증 및 엔드투엔드 공급망 조율이 그룹의 핵심 역량입니다.",
+      storyP3: "인도네시아 수라바야, 말레이시아 페낭, 베트남 호치민시에 각각 확고한 법인 거점을 구축하여, 높은 운영 투명성과 안정적인 이해관계자 가치를 창출하는 다국적 상무 플랫폼을 확립하였습니다.",
       visionTitle: "우리의 비전 (Vision)",
       visionText: "동남아시아의 자원과 우수한 제품을 글로벌 시장과 연결하는 가장 신뢰받는 국제 무역 그룹으로 도약한다.",
       missionTitle: "우리의 사명 (Mission)",

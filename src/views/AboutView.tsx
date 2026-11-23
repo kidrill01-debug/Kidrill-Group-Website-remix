@@ -40,7 +40,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
           {t.headline}
         </h1>
         <p className="mt-6 text-lg text-slate-600 max-w-2xl font-light leading-relaxed">
-          Kidrill Group is an independent international trading, resources, and mineral processing corporation operating across Indonesia, Malaysia, and Vietnam, committed to reliable, transparent, and durable B2B trade partnerships.
+          Kidrill Group is an independent international commercial group operating across Indonesia, Malaysia and Vietnam, committed to sound corporate governance, institutional discipline and durable international partnerships.
         </p>
       </div>
 
@@ -49,7 +49,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-white border border-stone-200/90 rounded-2xl p-8 sm:p-14 shadow-sm items-center">
           <div className="lg:col-span-5 space-y-6">
             <span className="text-xs font-mono-num uppercase tracking-widest text-[#C8102E] font-semibold">
-              INSTITUTIONAL MODEL
+              CORPORATE IDENTITY &amp; POSITIONING
             </span>
             <h2 className="text-2xl sm:text-3xl font-serif-corp font-medium text-slate-900 leading-snug">
               {t.storyTitle}
@@ -60,8 +60,7 @@ export const AboutView: React.FC<AboutViewProps> = ({
               fallbackSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
               alt="Kidrill Group Headquarters - Pakuwon Centre, Surabaya"
               aspectRatio="16/9"
-              badge="CORPORATE HEADQUARTERS"
-              caption="Pakuwon Centre, Surabaya - Corporate headquarters and regional operational base"
+              caption="Pakuwon Centre, Surabaya · Corporate headquarters and regional operational base"
               className="rounded-xl shadow-xs"
             />
 

@@ -44,11 +44,11 @@ export const PenangFacilityView: React.FC<PenangFacilityViewProps> = ({
       step: '01',
       title: 'Mineral Sourcing in Indonesia',
       phase: 'Upstream Supply',
-      summary: 'Origin ore procurement from authorized Indonesian mining concessions.',
-      details: 'Identification, geological sampling, and bilateral offtake structuring of polymetallic mineral ore from verified concessions in Indonesia, compliant with national mineral export governance.',
+      summary: 'Feedstock procurement dialogue with verified regional mineral producers.',
+      details: 'Evaluation, geological assaying and bilateral offtake structuring of polymetallic mineral feedstocks from authorized regional suppliers, in accordance with applicable export and trade regulations.',
       icon: Compass,
-      inputs: 'Raw Indonesian Polymetallic Ore',
-      outputs: 'Verified Concession Ore Lots',
+      inputs: 'Raw Regional Polymetallic Ore',
+      outputs: 'Verified Feedstock Lots',
       accentColor: 'border-slate-300'
     },
     {
@@ -58,7 +58,7 @@ export const PenangFacilityView: React.FC<PenangFacilityViewProps> = ({
       summary: 'Direct bulk maritime transit across regional Malacca Strait corridors.',
       details: 'Scheduled maritime cargo transport from Indonesian loading anchorages across the Malacca Strait directly to deepwater port terminals in Penang, minimizing transit time and logistical overhead.',
       icon: Ship,
-      inputs: 'Concession Bulk Stockpiles',
+      inputs: 'Supplier Bulk Stockpiles',
       outputs: 'Discharged Port Feedstock',
       accentColor: 'border-slate-300'
     },
@@ -279,13 +279,13 @@ export const PenangFacilityView: React.FC<PenangFacilityViewProps> = ({
             <div className="p-5 bg-slate-50 border border-slate-200/80 rounded-xl space-y-1">
               <div className="text-[11px] font-mono-num uppercase tracking-wider text-slate-700 font-semibold flex items-center gap-1.5">
                 <Compass className="w-3.5 h-3.5 text-[#C8102E]" />
-                <span>Feedstock Supply</span>
+                <span>Feedstock Sourcing</span>
               </div>
               <div className="text-base font-serif-corp font-semibold text-slate-950">
-                Indonesia Concessions
+                Regional Supplier Relationships
               </div>
               <p className="text-xs text-slate-500 font-light">
-                Cross-border maritime corridor connecting Indonesian mining with Penang.
+                Cross-border maritime corridor connecting authorized regional suppliers with Penang.
               </p>
             </div>
 
@@ -398,7 +398,7 @@ export const PenangFacilityView: React.FC<PenangFacilityViewProps> = ({
                     Polymetallic Ore Characteristics
                   </h4>
                   <p className="text-xs text-slate-600 font-light leading-relaxed">
-                    Sourced from verified mineral concessions in Indonesia, incoming ore will undergo physical characterization and metallurgical assays to determine optimal comminution and separation kinetics.
+                    Procured through verified regional supply relationships, incoming ore will undergo physical characterization and metallurgical assays to determine optimal comminution and separation kinetics.
                   </p>
                 </div>
 
@@ -457,11 +457,11 @@ export const PenangFacilityView: React.FC<PenangFacilityViewProps> = ({
               </div>
 
               <p className="text-xs sm:text-sm text-slate-600 font-light leading-relaxed">
-                Direct concession sourcing of mineral commodities, mined resources, and raw polymetallic ores across Kalimantan, Sumatra, and Java.
+                Commercial origination of mineral commodities, energy resources and raw polymetallic ores through authorized regional producer relationships across Indonesia.
               </p>
 
               <div className="pt-3 border-t border-slate-200 text-xs font-mono-num text-slate-500 space-y-1">
-                <div>· Concession verification &amp; assays</div>
+                <div>· Producer verification &amp; certified assays</div>
                 <div>· Port stockpiling &amp; barge logistics</div>
                 <div>· Export trade compliance</div>
               </div>
@@ -935,7 +935,7 @@ export const PenangFacilityView: React.FC<PenangFacilityViewProps> = ({
                 Engage with KIDRILL · Penang, Malaysia
               </h2>
               <p className="text-base text-slate-300 font-light leading-relaxed max-w-xl">
-                We invite technical collaboration, mineral feedstock supply arrangements, and commercial offtake dialogues with certified smelters, mining concessionaires, and industrial metal consumers.
+                We invite commercial dialogue, feedstock supply proposals and offtake collaboration with licensed resource holders, certified smelters and industrial metal consumers.
               </p>
 
               {/* Direct Group Communication Channels */}

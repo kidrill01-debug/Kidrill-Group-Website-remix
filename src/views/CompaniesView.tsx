@@ -175,8 +175,7 @@ export const CompaniesView: React.FC<CompaniesViewProps> = ({
                     src={pakuwonHeadquartersImage}
                     fallbackSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
                     alt="PT PMA Kidrill Metal Mining - Pakuwon Centre Headquarters, Surabaya"
-                    badge="INDONESIA HEADQUARTERS"
-                    caption="Pakuwon Centre, 23rd Floor, Surabaya - Corporate headquarters of PT PMA Kidrill Metal Mining"
+                    caption="Pakuwon Centre, 23rd Floor, Surabaya · Corporate headquarters of PT PMA Kidrill Metal Mining"
                     aspectRatio="16/9"
                     className="rounded-xl shadow-xs mb-6"
                   />
@@ -354,7 +353,6 @@ export const CompaniesView: React.FC<CompaniesViewProps> = ({
                     src={kidrillFacilityImage}
                     fallbackSrc="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1200&q=80"
                     alt="KIDRILL - Mineral Processing & Smelter Facility in Penang Malaysia"
-                    badge="KIDRILL · PENANG, MALAYSIA"
                     caption="Industrial mineral processing and smelter facility in Penang, Malaysia"
                     aspectRatio="16/9"
                     className="rounded-xl shadow-xs mb-6"
@@ -374,7 +372,7 @@ export const CompaniesView: React.FC<CompaniesViewProps> = ({
                     </h4>
                     <p className="text-xs sm:text-sm text-slate-700 font-light leading-relaxed">
                       1. Copper (Cathode &amp; Concentrates) — Copper cathodes and copper concentrates.<br />
-                      2. Industrial Metals &amp; Non-Ferrous Alloys — Industrial metals, base metals, and non-ferrous alloys.
+                      2. Industrial Metals &amp; Non-Ferrous Alloys — Industrial metals, base metals and non-ferrous alloys.
                     </p>
                   </div>
                 </div>
@@ -435,7 +433,6 @@ export const CompaniesView: React.FC<CompaniesViewProps> = ({
                             fallbackSrc={product.fallbackImageUrl}
                             alt={title}
                             aspectRatio="16/9"
-                            badge="KIDRILL · PENANG, MALAYSIA"
                           />
                         </div>
 
@@ -487,7 +484,7 @@ export const CompaniesView: React.FC<CompaniesViewProps> = ({
                     Complete 6-Stage Process Flow Diagram Available
                   </div>
                   <div className="text-xs text-slate-500 font-light">
-                    Review KIDRILL's raw material sourcing, maritime transit, ore preparation, mineral processing, and smelting circuits.
+                    Review KIDRILL's raw material sourcing, maritime transit, ore preparation, mineral processing and smelting circuits.
                   </div>
                 </div>
               </div>
@@ -572,8 +569,7 @@ export const CompaniesView: React.FC<CompaniesViewProps> = ({
                     src={vietnamAgriImage}
                     fallbackSrc="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=1200&q=80"
                     alt="Thunder Mark Vietnam Co., Ltd. - Export Quality Agricultural & Food Products"
-                    badge="VIETNAM EXPORT GATEWAY"
-                    caption="Mekong Delta agricultural produce, rice, and high-grade export commodities"
+                    caption="Mekong Delta agricultural produce, rice and high-grade export commodities"
                     aspectRatio="16/9"
                     className="rounded-xl shadow-xs mb-6"
                     imgStyle={{ height: '303px' }}

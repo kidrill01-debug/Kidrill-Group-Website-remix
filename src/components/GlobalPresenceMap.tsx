@@ -36,8 +36,8 @@ export const GlobalPresenceMap: React.FC<GlobalPresenceMapProps> = ({
       x: 77.5,
       y: 65,
       country: 'Indonesia',
-      commoditiesEn: ['Mineral Commodities & Mining Resources', 'Raw Mineral Materials'],
-      roleEn: 'Operational Base: KIDRILL METAL MINING · PT PMA Kidrill Metal Mining (23rd Fl, Pakuwon Centre, Surabaya). Origin sourcing hub for mineral commodities and mining resources.',
+      commoditiesEn: ['Mineral Commodities & Energy Resources', 'Commercial Sourcing Coordination'],
+      roleEn: 'Operational Base: KIDRILL METAL MINING · PT PMA Kidrill Metal Mining (23rd Fl, Pakuwon Centre, Surabaya). Commercial origination and supplier coordination hub for Indonesian mineral commodities and energy resources.',
       transitTime: 'Origin Hub (Direct Port Berthing)',
       status: 'Primary Business Center'
     },
@@ -49,7 +49,7 @@ export const GlobalPresenceMap: React.FC<GlobalPresenceMapProps> = ({
       y: 56.5,
       country: 'Malaysia',
       commoditiesEn: ['Copper (Cathode & Concentrates)', 'Industrial Metals & Non-Ferrous Alloys', 'Mineral Processing & Smelter'],
-      roleEn: 'Operating Base: KIDRILL (Penang Port & Industrial Corridor, Malaysia). Mineral Processing & Smelter facility producing copper cathodes, copper concentrates, industrial metals, and non-ferrous alloys.',
+      roleEn: 'Operating Base: KIDRILL (Penang Port & Industrial Corridor, Malaysia). Mineral processing and smelting facility producing copper cathodes, copper concentrates, industrial metals and non-ferrous alloys.',
       transitTime: 'Processing & Smelting Hub (Penang Port Corridor)',
       status: 'Mineral Processing & Smelter'
     },
@@ -61,7 +61,7 @@ export const GlobalPresenceMap: React.FC<GlobalPresenceMapProps> = ({
       y: 53.5,
       country: 'Vietnam',
       commoditiesEn: ['Vietnamese Export Rice', 'Agricultural Products & Origin Commodities', 'Processed Food Products & Specialties'],
-      roleEn: 'Operational Base: Thunder Mark Vietnam Co., Ltd. (Golding King Tower, HCMC). Export bridge for Vietnamese export rice, origin agricultural commodities, and processed food products.',
+      roleEn: 'Operational Base: Thunder Mark Vietnam Co., Ltd. (Golding King Tower, HCMC). Export bridge for Vietnamese export rice, origin agricultural commodities and processed food products.',
       transitTime: 'Origin Hub (Deepwater Ports)',
       status: 'Primary Export Center'
     },
@@ -72,8 +72,8 @@ export const GlobalPresenceMap: React.FC<GlobalPresenceMapProps> = ({
       x: 82.5,
       y: 37,
       country: 'South Korea',
-      commoditiesEn: ['Thermal Coal for Utilities', 'Mineral Commodities & Mining Resources', 'Vietnamese Export Rice', 'Agricultural Commodities'],
-      roleEn: 'Major bilateral destination for thermal coal, mineral commodities, and high-volume Vietnamese agricultural foodstuffs and processed food products.',
+      commoditiesEn: ['Thermal Coal for Utilities', 'Mineral Commodities & Industrial Metals', 'Vietnamese Export Rice', 'Agricultural Commodities'],
+      roleEn: 'Major bilateral destination for thermal coal, mineral commodities and high-volume Vietnamese agricultural foodstuffs and processed food products.',
       transitTime: '5 – 8 Days (Sea Freight)',
       status: 'Key Bilateral Market'
     },
@@ -85,25 +85,25 @@ export const GlobalPresenceMap: React.FC<GlobalPresenceMapProps> = ({
       y: 42,
       country: 'China',
       commoditiesEn: ['Raw Minerals & Ores', 'Mineral Commodities', 'Agricultural Bulk Rice', 'Processed Seafood'],
-      roleEn: 'High-volume off-taker for heavy mineral extraction, energy commodities, and Southeast Asian food staples via strategic sea lanes.',
+      roleEn: 'High-volume off-taker for industrial minerals, energy commodities and Southeast Asian food staples via strategic sea lanes.',
       transitTime: '4 – 7 Days (Sea Freight)',
       status: 'High-Volume Corridor'
     },
     {
       id: 'europe',
-      nameEn: 'Europe (Rotterdam / Hamburg / Antwerp)',
+      nameEn: 'Europe (Rotterdam / Antwerp)',
       category: 'market',
       x: 49.5,
       y: 30,
       country: 'European Union',
       commoditiesEn: ['Specialty Coffee (Robusta)', 'High-Grade Certified Seafood', 'Mined Mineral Commodities'],
-      roleEn: 'Demanding destination for traceability-compliant agricultural products, certified sustainable marine proteins, and strategic metals.',
+      roleEn: 'Demanding destination for traceability-compliant agricultural products, certified sustainable marine proteins and strategic metals.',
       transitTime: '22 – 28 Days (Maritime Route)',
       status: 'Institutional Market'
     },
     {
       id: 'usa',
-      nameEn: 'United States (Pacific & Atlantic Gateways)',
+      nameEn: 'United States (Pacific / Atlantic)',
       category: 'market',
       x: 21,
       y: 36,
@@ -121,7 +121,7 @@ export const GlobalPresenceMap: React.FC<GlobalPresenceMapProps> = ({
       y: 60,
       country: 'ASEAN Regional',
       commoditiesEn: ['Intra-ASEAN Commodity Arbitrage', 'Cross-Border Mineral Trading', 'Food Logistics'],
-      roleEn: 'Cross-border trading network bridging origin mines and agricultural fields across ASEAN commercial hubs.',
+      roleEn: 'Cross-border trading network bridging origin sourcing and agricultural fields across ASEAN commercial hubs.',
       transitTime: '2 – 4 Days (Feeder Vessels)',
       status: 'Regional Backbone'
     }
@@ -349,33 +349,82 @@ export const GlobalPresenceMap: React.FC<GlobalPresenceMapProps> = ({
             </svg>
           </div>
 
-          {/* Map Controls / Hub Selectors Ribbon */}
-          <div className="mt-6 pt-6 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-xs text-slate-500">
-              <span className="font-semibold text-slate-700 uppercase tracking-wider">{t.presence.selectRegion}</span>
+          {/* Visual Legend for Map Elements */}
+          <div className="mt-4 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-4 text-xs">
+            <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-slate-600">
+              <span className="font-semibold text-slate-700 font-mono-num uppercase tracking-wider text-[11px]">Map Legend:</span>
+              <div className="flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#C8102E] ring-2 ring-[#C8102E]/20" />
+                <span className="font-medium text-slate-800">Group Operational Hubs (3 Hubs)</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-slate-400 ring-2 ring-slate-200" />
+                <span>Destination Markets (5 Regions)</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <span className="w-6 h-0.5 bg-[#C8102E] inline-block" />
+                <span>Active Commercial Corridors</span>
+              </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-2">
-              {hubs.map((hub) => {
-                const isSelected = hub.id === activeHubId;
-                const isOrigin = hub.category === 'origin';
-                return (
-                  <button
-                    key={hub.id}
-                    onClick={() => setActiveHubId(hub.id)}
-                    className={`px-3 py-1.5 text-xs font-medium rounded transition-all cursor-pointer flex items-center gap-1.5 ${
-                      isSelected
-                        ? 'bg-[#C8102E] text-white shadow-xs font-semibold'
-                        : isOrigin
-                        ? 'bg-[#C8102E]/10 text-[#C8102E] border border-[#C8102E]/30 hover:bg-[#C8102E]/20'
-                        : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-                    }`}
-                  >
-                    {isOrigin && <MapPin className="w-3 h-3 text-[#C8102E]" />}
-                    <span>{hub.nameEn}</span>
-                  </button>
-                );
-              })}
+            <div className="text-[11px] font-mono-num text-slate-400">
+              Click any hub or button below to inspect details
+            </div>
+          </div>
+
+          {/* Map Controls / Grouped Hub Selectors */}
+          <div className="mt-4 pt-4 border-t border-slate-200 space-y-3">
+            {/* Group 1: Group Operational Hubs */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+              <div className="text-[11px] font-mono-num uppercase tracking-wider text-[#C8102E] font-bold shrink-0 w-36 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#C8102E]" />
+                <span>Operational Hubs:</span>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                {hubs.filter(h => h.category === 'origin').map((hub) => {
+                  const isSelected = hub.id === activeHubId;
+                  return (
+                    <button
+                      key={hub.id}
+                      onClick={() => setActiveHubId(hub.id)}
+                      className={`px-3 py-1.5 text-xs font-medium rounded transition-all cursor-pointer flex items-center gap-1.5 ${
+                        isSelected
+                          ? 'bg-[#C8102E] text-white shadow-xs font-semibold'
+                          : 'bg-[#C8102E]/10 text-[#C8102E] border border-[#C8102E]/30 hover:bg-[#C8102E]/20'
+                      }`}
+                    >
+                      <MapPin className="w-3 h-3 text-current" />
+                      <span>{hub.nameEn}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Group 2: Key Destination Markets & Corridors */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+              <div className="text-[11px] font-mono-num uppercase tracking-wider text-slate-500 font-semibold shrink-0 w-36 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
+                <span>Destination Markets:</span>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                {hubs.filter(h => h.category === 'market').map((hub) => {
+                  const isSelected = hub.id === activeHubId;
+                  return (
+                    <button
+                      key={hub.id}
+                      onClick={() => setActiveHubId(hub.id)}
+                      className={`px-3 py-1.5 text-xs font-medium rounded transition-all cursor-pointer flex items-center gap-1.5 ${
+                        isSelected
+                          ? 'bg-slate-900 text-white shadow-xs font-semibold'
+                          : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                      }`}
+                    >
+                      <span>{hub.nameEn}</span>
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

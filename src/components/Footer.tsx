@@ -109,6 +109,20 @@ export const Footer: React.FC<FooterProps> = ({
                   Supply Pipelines
                 </button>
               </li>
+              <li>
+                <button
+                  onClick={() => {
+                    onNavigate('business');
+                    setTimeout(() => {
+                      document.getElementById('sourcing-requirements')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  }}
+                  className="text-[#C8102E] hover:underline transition-colors text-left cursor-pointer font-medium flex items-center gap-1"
+                >
+                  <span>Our Sourcing Requirements (Copper Ore)</span>
+                  <ArrowUpRight className="w-3 h-3" />
+                </button>
+              </li>
             </ul>
           </div>
 

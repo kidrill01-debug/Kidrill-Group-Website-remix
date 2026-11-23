@@ -8,7 +8,7 @@ import { RealImage } from '../components/RealImage';
 import heroMaritimeImage from '../assets/images/regenerated_image_1792657885994.png';
 import kidrillFacilityImage from '../assets/images/regenerated_image_1792997135184.png';
 import aboutUsPakuwonImage from '../assets/images/about_us_pakuwon.png';
-import indonesianCoalImage from '../assets/images/indonesian_coal.png';
+import commodityTradeImage from '../assets/images/commodity_trade.png';
 import thunderMarkVietnamImage from '../assets/images/regenerated_image_1793775136612.png';
 import {
   ArrowRight,
@@ -189,11 +189,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 {/* Real Photograph */}
                 <div className="w-full relative overflow-hidden">
                   <RealImage
-                    src={indonesianCoalImage}
-                    fallbackSrc={indonesianCoalImage}
-                    alt="PT PMA Kidrill Metal Mining - Indonesian Coal & Mineral Commodities"
+                    src={commodityTradeImage}
+                    fallbackSrc={commodityTradeImage}
+                    alt="PT PMA Kidrill Metal Mining - Mineral Commodities & Energy Resources"
                     aspectRatio="16/9"
-                    badge="PT PMA INDONESIA"
                   />
                 </div>
 
@@ -242,7 +241,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     fallbackSrc="https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=1200&q=80"
                     alt="Food & Agriculture - Thunder Mark Vietnam Agricultural Products"
                     aspectRatio="16/9"
-                    badge="THUNDER MARK VIETNAM"
                   />
                 </div>
 
@@ -291,7 +289,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     fallbackSrc="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80"
                     alt="KIDRILL Mineral Processing & Smelter Facility - Penang, Malaysia"
                     aspectRatio="16/9"
-                    badge="KIDRILL · PENANG, MALAYSIA"
                   />
                 </div>
 
@@ -340,7 +337,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     fallbackSrc="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=1200&q=80"
                     alt="Kidrill Group Headquarters - Global Commercial Tower"
                     aspectRatio="16/9"
-                    badge="KIDRILL GOVERNANCE"
                   />
                 </div>
 
@@ -377,6 +373,35 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   Governance: Institutional B2B
                 </span>
               </div>
+            </div>
+          </div>
+
+          {/* Featured Sourcing Callout for Prospective Suppliers */}
+          <div className="mt-12 bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-2xl">
+              <div className="text-[11px] font-mono-num uppercase tracking-[0.2em] text-[#C8102E] font-semibold">
+                COMMERCIAL SOURCING &amp; SUPPLIER PARTNERSHIPS
+              </div>
+              <h3 className="text-xl sm:text-2xl font-serif-corp font-medium text-slate-950">
+                Our Sourcing Requirements: Copper Ore
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 font-light leading-relaxed">
+                KIDRILL Group is seeking reliable suppliers and strategic sourcing partners for copper ore to support its mineral processing and trading activities.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3 shrink-0">
+              <button
+                onClick={() => {
+                  onNavigate('business');
+                  setTimeout(() => {
+                    document.getElementById('sourcing-requirements')?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+                className="px-5 py-2.5 text-xs font-semibold tracking-wider uppercase bg-[#C8102E] text-white hover:bg-slate-900 rounded transition-colors inline-flex items-center gap-2 cursor-pointer shadow-xs"
+              >
+                <span>Review Sourcing Criteria</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
             </div>
           </div>
         </div>
@@ -442,7 +467,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
                           fallbackSrc={product.fallbackImageUrl}
                           alt={product.titleKey}
                           aspectRatio="16/9"
-                          badge="KIDRILL · PENANG, MALAYSIA"
                         />
                       </div>
                       <div className="p-6">
@@ -480,10 +504,10 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     <span>COMPANY 2 · KIDRILL METAL MINING</span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-serif-corp font-medium text-slate-950">
-                    Mineral Commodities &amp; Mining Resources
+                    Mineral Commodities &amp; Energy Resources
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 font-light">
-                    PT PMA Kidrill Metal Mining · 23rd Floor Pakuwon Centre, Surabaya, East Java, Indonesia · Indonesian mining concession trade and raw mineral commodities.
+                    PT PMA Kidrill Metal Mining · 23rd Floor Pakuwon Centre, Surabaya, East Java, Indonesia · Indonesian mineral commodities, energy resources and regional trade coordination.
                   </p>
                 </div>
                 <span className="self-start sm:self-auto text-xs font-mono-num font-semibold text-slate-500 bg-slate-100 px-3 py-1.5 rounded border border-slate-200/70">
@@ -505,7 +529,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
                           fallbackSrc={product.fallbackImageUrl}
                           alt={product.titleKey}
                           aspectRatio="16/9"
-                          badge="KIDRILL METAL MINING · INDONESIA"
                         />
                       </div>
                       <div className="p-6">

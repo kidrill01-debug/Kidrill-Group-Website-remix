@@ -57,7 +57,7 @@ export const newsArticles: NewsArticle[] = [
     category: 'Mineral Commodities & Mining Resources',
     titleEn: 'Strategic Mineral Commodities and Raw Industrial Ores in Cross-Border Asian Trade',
     titleKo: '국경 간 아시아 무역에서의 전략 광물 원자재 및 산업용 원광석 공급망',
-    excerptEn: 'Examining global supply dynamics in raw mineral commodities and how regional trading intermediaries connect verified Southeast Asian mining concessions with international processors.',
+    excerptEn: 'Examining global supply dynamics in mineral commodities and how regional trading corporations facilitate structured trade between authorized Southeast Asian producers and international industrial consumers.',
     excerptKo: '광물 원자재의 글로벌 공급 동향과 동남아시아 공인 광산을 해외 가공 시설과 연결하는 전문 무역 상사의 역할.',
     date: 'AUG 2026',
     readTime: '6 min read',
@@ -65,9 +65,9 @@ export const newsArticles: NewsArticle[] = [
     realImageUrl: commodityTradeImage,
     contentEn: [
       'This is a Sample Article prepared for the Kidrill Group corporate portal editorial preview.',
-      'Industrial transformation across manufacturing, energy infrastructure, and metallurgical processing has placed reliable raw mineral commodities at the center of international trade.',
-      'Kidrill Group through PT PMA Kidrill Metal Mining monitors statutory concession compliance, assay verification, and secure vessel transit to connect verified mining operations with international industrial processing plants.',
-      'All commercial inquiries for mineral commodities and mining resources are managed under strict institutional governance and third-party laboratory verification.'
+      'Industrial transformation across manufacturing, energy infrastructure and metallurgical processing has placed reliable raw mineral commodities at the center of international trade.',
+      'Kidrill Group, through PT PMA Kidrill Metal Mining, coordinates regulatory compliance review, independent assay verification and bulk vessel logistics to facilitate reliable trade flows from regional producers to international industrial processing facilities.',
+      'All commercial inquiries for mineral commodities and energy resources are managed under strict institutional governance and third-party laboratory verification.'
     ],
     contentKo: [
       '본 게시물은 키드릴 그룹 웹사이트의 레이아웃 및 정보 제공 방식을 시연하기 위한 샘플 기사(Sample Article)입니다.',

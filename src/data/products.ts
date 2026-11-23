@@ -1,5 +1,5 @@
 import { ProductItem } from '../types';
-import copperCathodeImage from '../assets/images/indonesian_coal.png';
+import copperCathodeImage from '../assets/images/copper_cathode.png';
 import industrialMetalsImage from '../assets/images/regenerated_image_1793091217372.png';
 import mineralCommoditiesImage from '../assets/images/regenerated_image_1793091335589.png';
 import processedFoodsImage from '../assets/images/regenerated_image_1793775136612.png';
@@ -18,7 +18,7 @@ export const productsData: ProductItem[] = [
     titleKo: '전기동 음극재 및 동정광 (Copper Cathode & Concentrates)',
     originKey: 'Penang, Malaysia',
     originKo: '말레이시아 페낭 (Penang, Malaysia)',
-    descriptionKey: 'Copper cathodes and copper concentrates engineered for international metallurgy, cable manufacturing, and certified smelting converters.',
+    descriptionKey: 'Copper cathodes and copper concentrates engineered for international metallurgy, cable manufacturing and certified smelting converters.',
     descriptionKo: '말레이시아 페낭 가공 및 제련 시설에서 생산 및 회수되는 전기동 음극재(Copper Cathode)와 동정광을 산업 및 제련 수요처에 공급합니다.',
     specsSummary: 'Copper cathodes and copper concentrates available upon request. Detailed assay certificates provided with commercial inquiries.',
     specsSummaryKo: '전기동 및 동정광 성분 분석표 및 상세 스펙은 정식 B2B 문의 시 제공됩니다.',
@@ -52,9 +52,9 @@ export const productsData: ProductItem[] = [
     titleKo: '산업용 금속 및 비철합금 (Industrial Metals & Non-Ferrous Alloys)',
     originKey: 'Penang, Malaysia',
     originKo: '말레이시아 페낭 (Penang, Malaysia)',
-    descriptionKey: 'Industrial metals, base metals, and non-ferrous alloys produced and processed for industrial conversion, foundry operations, and infrastructure manufacturing.',
+    descriptionKey: 'Industrial metals, base metals and non-ferrous alloys produced and processed for industrial conversion, foundry operations and infrastructure manufacturing.',
     descriptionKo: '중공업, 정련 및 주조 산업에 필수적인 산업용 기초 금속과 비철합금 가공 원자재를 조달 및 공급합니다.',
-    specsSummary: 'Base metals, primary ingots, and non-ferrous alloy fractions available upon request.',
+    specsSummary: 'Base metals, primary ingots and non-ferrous alloy fractions available upon request.',
     specsSummaryKo: '산업용 비철금속 및 합금 성분 규격서는 B2B 문의 시 제공됩니다.',
     shippingTerms: 'FOB Penang Port / CIF Available upon request (Incoterms 2020)',
     inspection: 'Independent third-party inspection upon request.',
@@ -86,11 +86,11 @@ export const productsData: ProductItem[] = [
     companyNameEn: 'KIDRILL METAL MINING',
     companyNameKo: 'KIDRILL METAL MINING (PT PMA Kidrill Metal Mining)',
     category: 'minerals_metals',
-    titleKey: 'Mineral Commodities & Mining Resources',
-    titleKo: '광물 원자재 및 광산 자원 (Mineral Commodities & Mining Resources)',
+    titleKey: 'Mineral Commodities & Energy Resources',
+    titleKo: '광물 원자재 및 에너지 자원 (Mineral Commodities & Energy Resources)',
     originKey: 'Surabaya / East Java, Indonesia',
     originKo: '인도네시아 수라바야 및 동남아시아 광산',
-    descriptionKey: 'Mineral commodities, raw mineral materials, and mining resources connecting direct Indonesian mining concessions with international processing facilities.',
+    descriptionKey: 'Commercial origination and trade coordination for Indonesian mineral commodities and energy resources, connecting verified regional producers with international industrial consumers.',
     descriptionKo: '인도네시아의 풍부한 광산 자원, 원광석 및 원자재를 발굴하여 해외 정련 및 가공 시설과 연결하는 광물 원자재 무역 서비스입니다.',
     specsSummary: 'Available upon request.',
     specsSummaryKo: '광종별 품위 및 성분 분석표는 정식 요청 시 제공됩니다.',
@@ -102,9 +102,9 @@ export const productsData: ProductItem[] = [
     realImageUrl: mineralCommoditiesImage,
     fallbackImageUrl: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
     keyHighlights: [
-      'Direct contact with Indonesian mining concessionaires',
-      'Full statutory mining permit (IUP-OP) verification',
-      'Transparent chain of custody and royalty compliance',
+      'Commercial dialogue with authorized Indonesian resource holders and licensed producers',
+      'Full statutory mining permit (IUP-OP) verification review',
+      'Transparent chain of custody and royalty compliance documentation',
       'Comprehensive vessel logistics coordination'
     ],
     keyHighlightsKo: [
