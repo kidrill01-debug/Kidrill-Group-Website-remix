@@ -42,8 +42,15 @@ export const BusinessView: React.FC<BusinessViewProps> = ({
         <div className="text-xs font-mono-num uppercase tracking-[0.25em] text-[#C8102E] mb-3 font-semibold">
           {t.tag}
         </div>
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif-corp font-normal tracking-tight text-slate-950 max-w-4xl leading-[1.12]">
-          {t.title}
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif-corp font-normal tracking-tight text-slate-950 leading-[1.12]">
+          {t.title.includes('Processing & Logistics') ? (
+            <>
+              <span className="block">{t.title.replace('Processing & Logistics', '').trim()}</span>
+              <span className="block">Processing &amp; Logistics</span>
+            </>
+          ) : (
+            t.title
+          )}
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-2xl font-light leading-relaxed">
           {t.subtitle}

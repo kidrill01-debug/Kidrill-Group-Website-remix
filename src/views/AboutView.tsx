@@ -36,8 +36,15 @@ export const AboutView: React.FC<AboutViewProps> = ({
         <div className="text-xs font-mono-num uppercase tracking-[0.25em] text-[#C8102E] mb-3 font-semibold">
           {t.tag}
         </div>
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif-corp font-normal tracking-tight text-slate-900 max-w-4xl leading-[1.12]">
-          {t.headline}
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif-corp font-normal tracking-tight text-slate-900 leading-[1.12]">
+          {t.headline.includes('Corporate Governance,') ? (
+            <>
+              <span className="block">Corporate Governance,</span>
+              <span className="block">{t.headline.replace('Corporate Governance,', '').trim()}</span>
+            </>
+          ) : (
+            t.headline
+          )}
         </h1>
         <p className="mt-6 text-lg text-slate-600 max-w-2xl font-light leading-relaxed">
           Kidrill Group is an independent international commercial group operating across Indonesia, Malaysia and Vietnam, committed to sound corporate governance, institutional discipline and durable international partnerships.
