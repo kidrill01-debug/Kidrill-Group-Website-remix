@@ -46,11 +46,11 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div className="space-y-1.5 text-xs text-slate-700 font-mono-num">
                 <a
-                  href="mailto:total@datmv.com"
+                  href="mailto:contact@kidrillgroup.com"
                   className="flex items-center gap-2 hover:text-[#C8102E] transition-colors"
                 >
                   <Mail className="w-3.5 h-3.5 text-[#C8102E]" />
-                  <span>total@datmv.com</span>
+                  <span>contact@kidrillgroup.com</span>
                 </a>
                 <a
                   href="tel:+6282264973015"
@@ -199,9 +199,9 @@ export const Footer: React.FC<FooterProps> = ({
 
             {/* Office 1: Indonesia */}
             <div className="p-3.5 bg-white border border-slate-200 rounded-xl text-xs space-y-1 shadow-xs">
-              <div className="font-semibold text-slate-900 flex items-center justify-between">
+              <div className="font-semibold text-slate-900 flex items-center justify-between gap-3">
                 <span>KIDRILL METAL MINING</span>
-                <span className="text-[10px] text-[#C8102E] font-mono-num uppercase font-semibold">Indonesia</span>
+                <span className="text-[10px] text-[#C8102E] font-mono-num uppercase font-semibold shrink-0">Indonesia</span>
               </div>
               <p className="text-slate-500 font-light leading-relaxed font-mono-num text-[11px]">
                 PT PMA Kidrill Metal Mining · 23rd FLOOR. PAKUWON CENTRE, JL EMBONG MALANG KEDUNGDORO, TEGALSARI KOTA SURABAYA JAWA TIMUR
@@ -210,9 +210,9 @@ export const Footer: React.FC<FooterProps> = ({
 
             {/* Office 2: Vietnam */}
             <div className="p-3.5 bg-white border border-slate-200 rounded-xl text-xs space-y-1 shadow-xs">
-              <div className="font-semibold text-slate-900 flex items-center justify-between">
-                <span>Thunder Mark Vietnam Co., Ltd.</span>
-                <span className="text-[10px] text-[#C8102E] font-mono-num uppercase font-semibold">Vietnam</span>
+              <div className="font-semibold text-slate-900 flex items-center justify-between gap-3">
+                <span>THUNDER MARK VIETNAM CO., LTD.</span>
+                <span className="text-[10px] text-[#C8102E] font-mono-num uppercase font-semibold shrink-0">Vietnam</span>
               </div>
               <p className="text-slate-500 font-light leading-relaxed font-mono-num text-[11px]">
                 Golden King Tower, Nguyen Luong Bang St., Tan Hung Ward, HCM City, Vietnam
@@ -224,9 +224,9 @@ export const Footer: React.FC<FooterProps> = ({
               onClick={() => onNavigate('penang-facility')}
               className="p-3.5 bg-white border border-slate-200 rounded-xl text-xs space-y-1 shadow-xs cursor-pointer hover:border-[#C8102E] transition-all group"
             >
-              <div className="font-semibold text-slate-900 flex items-center justify-between">
+              <div className="font-semibold text-slate-900 flex items-center justify-between gap-3">
                 <span className="group-hover:text-[#C8102E] transition-colors font-bold tracking-wide">KIDRILL</span>
-                <span className="text-[10px] text-[#C8102E] font-mono-num uppercase font-semibold">Penang, Malaysia</span>
+                <span className="text-[10px] text-[#C8102E] font-mono-num uppercase font-semibold shrink-0">Penang, Malaysia</span>
               </div>
               <p className="text-slate-500 font-light leading-relaxed font-mono-num text-[11px]">
                 Penang Port &amp; Industrial Corridor, Penang, Malaysia · Mineral Processing &amp; Smelter
