@@ -167,16 +167,16 @@ export const HomeView: React.FC<HomeViewProps> = ({
       {/* 3. BUSINESS AREAS WITH REAL COMMERCIAL PHOTOGRAPHY */}
       <section className="py-20 sm:py-28 bg-white text-slate-900 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div className="flex flex-col 2xl:flex-row 2xl:items-end justify-between gap-4 2xl:gap-6 mb-16">
             <div>
               <div className="text-xs font-mono-num uppercase tracking-[0.25em] text-[#C8102E] mb-2 font-semibold">
                 {t.businessOverview.tag}
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-corp font-normal tracking-tight text-slate-950 leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif-corp font-normal tracking-tight text-slate-950 leading-tight sm:whitespace-nowrap">
                 {t.businessOverview.title}
               </h2>
             </div>
-            <p className="max-w-md text-sm text-slate-600 leading-relaxed font-light">
+            <p className="max-w-3xl 2xl:max-w-sm text-sm text-slate-600 leading-relaxed font-light">
               {t.businessOverview.subtitle}
             </p>
           </div>

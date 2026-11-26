@@ -140,7 +140,7 @@ export const GlobalPresenceMap: React.FC<GlobalPresenceMapProps> = ({
             <span aria-hidden="true" className="text-slate-400">·</span>
             <span className="text-slate-600">SOUTHEAST ASIA &amp; GLOBAL HUBS</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-corp font-normal tracking-tight text-slate-950 max-w-3xl leading-[1.15]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif-corp font-normal tracking-tight text-slate-950 leading-[1.15] sm:whitespace-nowrap">
             {t.presence.headline}
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl font-light leading-relaxed">

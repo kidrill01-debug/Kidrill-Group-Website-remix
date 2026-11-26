@@ -45,7 +45,7 @@ export const NewsView: React.FC<NewsViewProps> = ({
         <div className="text-xs font-mono-num uppercase tracking-[0.25em] text-[#C8102E] mb-3 font-semibold">
           {t.tag}
         </div>
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif-corp font-normal tracking-tight text-slate-950 max-w-5xl leading-[1.12]">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-serif-corp font-normal tracking-tight text-slate-950 leading-[1.12]">
           {t.title}
         </h1>
         <p className="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl font-light leading-relaxed">

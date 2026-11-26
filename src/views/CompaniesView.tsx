@@ -52,7 +52,7 @@ export const CompaniesView: React.FC<CompaniesViewProps> = ({
         <div className="text-xs font-mono-num uppercase tracking-[0.25em] text-[#C8102E] mb-3 font-semibold">
           {t.tag}
         </div>
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif-corp font-normal tracking-tight text-slate-950 max-w-4xl leading-[1.12]">
+        <h1 className="text-3xl sm:text-4xl lg:text-[42px] xl:text-[52px] 2xl:text-6xl font-serif-corp font-normal tracking-tight text-slate-950 leading-[1.12]">
           {t.title}
         </h1>
         <p className="mt-6 text-lg text-slate-600 max-w-2xl font-light leading-relaxed">
